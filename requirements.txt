@@ -1,3 +1,4 @@
+git+https://github.com/lostb053/iytdl
 aiofiles
 aiohttp
 bs4
@@ -12,13 +13,10 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 googletrans==4.0.0rc1
-hachoir
 heroku3
 html-telegraph-poster
-git+https://github.com/lostb053/iytdl
 motor
 oauth2client
-Pillow==9.0.0
 psutil
 pybase64
 pyrogram>=1.3.6
