@@ -15,6 +15,7 @@ googletrans==4.0.0rc1
 hachoir
 heroku3
 html-telegraph-poster
+git+https://github.com/lostb053/iytdl
 motor
 oauth2client
 Pillow==9.0.0
