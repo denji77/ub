@@ -30,7 +30,7 @@ LOGGER = userge.getLogger(__name__)
 @userge.on_cmd("download", about={
     'header': "Download files to server",
     'usage': "{tr}download [url | reply to telegram media]",
-    'flags': {'st': "Single threaded download"}
+    'flags': {'-st': "Single threaded download"}
     'examples': "{tr}download https://speed.hetzner.de/100MB.bin | testing upload.bin"},
     check_downpath=True)
 async def down_load_media(message: Message):
