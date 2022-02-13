@@ -12,6 +12,7 @@ gitpython
 google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
+git+https://github.com/garyfeng/google-images-download
 googletrans==4.0.0rc1
 heroku3
 html-telegraph-poster
