@@ -70,7 +70,9 @@ async def convert_(message: Message):
         '-d': "upload as document",
         '-wt': "without thumb",
         '-r': "remove file after upload",
-        '-df': "don't forward to log channel"},
+        '-df': "don't forward to log channel",
+        '-st': "single threaded download"
+    },
     'usage': "{tr}upload [flags] [file or folder path | link]",
     'examples': [
         "{tr}upload -d https://speed.hetzner.de/100MB.bin | test.bin",
