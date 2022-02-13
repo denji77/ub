@@ -87,7 +87,8 @@ async def helpme(message: Message) -> None:  # pylint: disable=missing-function-
 if userge.has_bot:
     def check_owner(func):
         async def wrapper(_, c_q: CallbackQuery):
-            if c_q.from_user and c_q.from_user.id in (list(Config.OWNER_ID) + list(Config.SUDO_USERS)):                try:
+            if c_q.from_user and c_q.from_user.id in (list(Config.OWNER_ID) + list(Config.SUDO_USERS)):
+                try:
                     await func(c_q)
                 except MessageNotModified:
                     await c_q.answer("Nothing Found to Refresh 🤷‍♂️", show_alert=True)
