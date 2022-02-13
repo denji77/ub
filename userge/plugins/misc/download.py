@@ -107,6 +107,8 @@ async def url_download(message: Message, url: str) -> Tuple[str, int]:
             custom_file_name = c_file_name.strip()
     dl_loc = os.path.join(Config.DOWN_PATH, custom_file_name)
     downloader = SmartDL(url, dl_loc, progress_bar=False)
+    if "st" in message.flags:
+        downloader = SmartDL(url, dl_loc, progress_bar=False, threads=1)
     downloader.start(blocking=False)
     with message.cancel_callback(downloader.stop):
         while not downloader.isFinished():
